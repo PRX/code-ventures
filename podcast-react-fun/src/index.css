@@ -12,16 +12,6 @@ code {
     monospace;
 }
 
-.pagination{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 5rem;
-  padding: 5rem;
-  list-style: none;
-  text-align: center;
-}
-
  .num-list{
   font-size: 2em;
   color: black;

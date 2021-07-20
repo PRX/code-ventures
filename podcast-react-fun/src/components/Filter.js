@@ -26,19 +26,3 @@ const Filter = ({categories, loading, filterPods, filtered, reset}) => {
 }
 
 export default Filter
-
-
-
-
-// const Filter = ({categories, loading}) => {
-//  console.log(categories)
-
-
-//  return (
-//   <ul>
-//   </ul>
-//  )
-// }
-
-// export default Filter
-
