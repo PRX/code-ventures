@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title></title>
   <script type="text/javascript" src="support_functions.js"></script>
   <script type="text/javascript" src="challenge_functions.js"></script>
-  </head>
-  <body>
-    <script>
-      async function startup() {
-        console.log("Welcome! Let's fetch some podcast data!")
+</head>
 
-        let podcasts = await fetchPodcastMetadata();
+<body>
+  <script>
+    async function startup() {
+      console.log("Welcome! Let's fetch some podcast data!")
 
-        console.log(`I have fetched an array of ${podcasts.length} podcasts!`)
+      let podcasts = await fetchPodcastMetadata();
 
-        let titles = podcasts.map((podcast) => podcastTitle(podcast))
-        console.log(titles)
+      console.log(`I have fetched an array of ${podcasts.length} podcasts!`)
 
-        // Challenge 1:
-        // Reverse the words in each podcast title
-        // So a podcast called "Some Fine Podcast" becomes "Podcast Fine Some"
-        //
-        let reversedTitleWords = reverseWords(titles);
-        console.log(`Challenge 1 result: ${reversedTitleWords}`);
+      let titles = podcasts.map((podcast) => podcastTitle(podcast))
+      console.log(titles)
 
-        // Challenge 2:
-        // Remove duplicate characters from the podcast titles (case insensitive)
-        // So a podcast called "Some Fine Podcast" becomes "some fin pdcat" (removed duplicate 'e', 's', and 'o')
-        //
-        let titlesWithNoDupeCharacters = removeDupeChars(titles);
-        console.log(`Challenge 2 result: ${titlesWithNoDupeCharacters}`);
-      };
+      // Challenge 1:
+      // Reverse the words in each podcast title
+      // So a podcast called "Some Fine Podcast" becomes "Podcast Fine Some"
+      //
+      let reversedTitleWords = reverseWords(titles);
+      console.log(`Challenge 1 result: ${reversedTitleWords}`);
 
-      window.onload = startup;
+      // Challenge 2:
+      // Remove duplicate characters from the podcast titles (case insensitive)
+      // So a podcast called "Some Fine Podcast" becomes "some fin pdcat" (removed duplicate 'e', 's', and 'o')
+      //
+      let titlesWithNoDupeCharacters = removeDupeChars(titles);
+      console.log(`Challenge 2 result: ${titlesWithNoDupeCharacters}`);
+    };
 
-    </script>
-    <h3>Welcome to the Coding Challenge!</h3>
-    <p>This uses the browser's built in developer tools and console to interact with the code.</p>
-    <p>Let's get started!</p>
-    <ol>
+    window.onload = startup;
 
-      <li> Open your browser's console. In Google Chrome, select the menu View -&gt; Developer -&gt; Javascript Console </li>
-      <li> With the developer tools open, reload the browser page and you should see <pre>Welcome! Let's fetch some podcast data!</pre>
-      <li> Take a look at the source code for this page "index.html" and the two javascript files (supporting_functions.js and challenge_functions.js)
-      <li> Fill in the functions for the given challanges. When you're done let us know! </li>
-    </ol>
-  </body>
+  </script>
+  <h3>Welcome to the Coding Challenge!</h3>
+  <p>This uses the browser's built in developer tools and console to interact with the code.</p>
+  <p>Let's get started!</p>
+  <ol>
+
+    <li> Open your browser's console. In Google Chrome, select the menu View -&gt; Developer -&gt; Javascript Console
+    </li>
+    <li> With the developer tools open, reload the browser page and you should see
+      <pre>Welcome! Let's fetch some podcast data!</pre>
+    <li> Take a look at the source code for this page "index.html" and the two javascript files (supporting_functions.js
+      and challenge_functions.js)
+    <li> Fill in the functions for the given challanges. When you're done let us know! </li>
+  </ol>
+
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <div id="pods_container"></div>
+</body>
+
 </html>
