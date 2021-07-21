@@ -1,39 +1,18 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
- .num-list{
-  font-size: 2em;
-  color: black;
-  padding: 0;
-  width: 100%;
-  overflow-x: scroll;
-}
-
-
-.num-list:hover {
-  transform: translateY(-3px);
-  cursor: pointer;
-  color: rgb(179, 130, 27);
-} 
-
-.num-list > a {
-  padding: 0;
-  margin: 0;
-}
-
-
-.pods-container{
+.pods-container {
   display: flex;
   width: 90vw;
   margin-left: 1rem;
@@ -44,7 +23,7 @@ code {
   flex-wrap: wrap;
 }
 
-.pod-container{
+.pod-container {
   background-color: cadetblue;
   height: 30vh;
   width: 20vw;
@@ -54,9 +33,9 @@ code {
   box-shadow: 10px 5px 5px black;
 }
 
-.pod-title{
+.pod-title {
   margin-bottom: 1rem;
-  font-size: 1.25rem ;
+  font-size: 1.25rem;
   margin-left: 1rem;
   max-width: 80%;
 }
@@ -67,23 +46,25 @@ code {
   color: rgb(179, 130, 27);
 }
 
-.pod-author{
+.pod-author {
   margin-left: 1rem;
 }
 
-.pod-link{
+.pod-link {
   margin-left: 1rem;
 }
 
-.categories{
-  width: 100vw;
+.categories {
+  width: 90vw;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 3rem 0;
-  padding: 0 0 0 4rem ;
+  padding: 0 0 0 4rem;
 }
 
-.category{
+.category {
   margin-right: 1rem;
+  margin-bottom: 1rem;
   padding: 0;
 }

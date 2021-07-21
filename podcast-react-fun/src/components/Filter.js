@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Filter = ({categories, loading, filterPods, filtered, reset}) => {
+const Filter = ({categories, loading, filterPods}) => {
 
 
  const renderCate = () => {

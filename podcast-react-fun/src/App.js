@@ -12,11 +12,9 @@ const App = () => {
 
 
   const removeCateDupes = (arr) => {
-    let map = {}
     let result = []
     for(let ele of arr){
-      map[ele] = (map[ele] || 0) + 1
-      if(map[ele] > 1 && !result.includes(ele)){
+      if(!result.includes(ele)){
         result.push(ele)
       }
     }
@@ -72,7 +70,7 @@ const App = () => {
 
   return (
     <div>
-      <Filter categories={categories} loading={loading} filterPods={filterPods} selectedCategories={selectedCategories} filtered={filtered} />
+      <Filter categories={categories} loading={loading} filterPods={filterPods} />
       <Container pods={pods} loading={loading} filtered={filtered}/>
     </div>
   )
