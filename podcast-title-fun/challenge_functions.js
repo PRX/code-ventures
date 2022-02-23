@@ -10,8 +10,9 @@ function removeDupeChars(podcastTitles) {
   // TODO "Some Fine Podcast" becomes "some fin pdcat"
 }
 
-// Takes in an Array of podcast title strings
-// Returns an Array of those strings, sorted by an arbitrary level of "coolness" points
+// Takes in a podcast title string
+// Returns the number of cool-points that title has, based on how many times it
+// includes the following words:
 const COOL_WORDS = {
   bamboozled: 4,
   picturesque: 2,
@@ -21,6 +22,9 @@ const COOL_WORDS = {
 function coolPoints(title) {
   // TODO: "uncool title" returns 0, "bamboozled trapezoids" returns 5
 }
+
+// Takes in an Array of podcast title strings
+// Returns an Array of those strings, sorted by their "cool" points
 function sortCoolest(podcastTitles) {
   // TODO ["uncool title", "bamboozled stuff"] becomes ["bamboozled stuff", "uncool title"]
   return podcastTitles.sort((a, b) => {
