@@ -8,7 +8,7 @@ A series of challenges, manipulating podcast titles in your web browser.
    a private repo to Pull Request against!
 2. Checkout a new git branch to work from
 3. Open `index.html` in your web browser
-4. Code away!
+4. Code away! Refresh your browser to re-run tests.
 5. Commit your changes, and open a Github Pull Request
 
 ## Tasks
